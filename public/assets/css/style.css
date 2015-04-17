@@ -1,0 +1,24 @@
+fieldset .content {
+    display: none;
+}
+
+legend{
+    cursor: pointer;
+}
+
+.back{
+    margin: 18px;   
+    cursor: pointer;
+}
+
+.form-horizontal > fieldset > div{
+    display: none;
+}
+
+footer{
+    min-height: 50px;
+}
+
+.table-split td{
+    width: 50%;
+}

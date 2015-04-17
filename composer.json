@@ -1,0 +1,7 @@
+{
+    "require": {
+        "danoon/link": "~3.8",
+        "danoon/filestore": "1.0.9",
+        "twig/twig": "~1.18"
+    }
+}

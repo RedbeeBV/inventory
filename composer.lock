@@ -1,0 +1,150 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "f656604bdcc0775eeed6ec13a5d6f96f",
+    "packages": [
+        {
+            "name": "danoon/filestore",
+            "version": "1.0.9",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Danoon/Filestore.git",
+                "reference": "045bf5a26d7eb322f241ae65df942f3192380432"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Danoon/Filestore/zipball/045bf5a26d7eb322f241ae65df942f3192380432",
+                "reference": "045bf5a26d7eb322f241ae65df942f3192380432",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "FileStore\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Dany Henriquez",
+                    "email": "dany@henriquez.eu"
+                }
+            ],
+            "description": "Flat file key value store",
+            "homepage": "https://github.com/Danoon/Filestore",
+            "keywords": [
+                "key value store"
+            ],
+            "time": "2015-04-17 11:51:04"
+        },
+        {
+            "name": "danoon/link",
+            "version": "3.8.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Danoon/Link.git",
+                "reference": "d0d336573fee1c944c9b09a0740d0bec3e85cca7"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Danoon/Link/zipball/d0d336573fee1c944c9b09a0740d0bec3e85cca7",
+                "reference": "d0d336573fee1c944c9b09a0740d0bec3e85cca7",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-0": {
+                    "Link": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "authors": [
+                {
+                    "name": "Dany Henriquez",
+                    "email": "dany@henriquez.eu"
+                }
+            ],
+            "description": "Simple php microframework",
+            "homepage": "https://github.com/Danoon/Link",
+            "keywords": [
+                "Php microframework",
+                "container"
+            ],
+            "time": "2015-02-10 17:35:55"
+        },
+        {
+            "name": "twig/twig",
+            "version": "v1.18.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/twigphp/Twig.git",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/twigphp/Twig/zipball/4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "reference": "4cf7464348e7f9893a93f7096a90b73722be99cf",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.2.4"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.18-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Twig_": "lib/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "BSD-3-Clause"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com",
+                    "homepage": "http://fabien.potencier.org",
+                    "role": "Lead Developer"
+                },
+                {
+                    "name": "Armin Ronacher",
+                    "email": "armin.ronacher@active-4.com",
+                    "role": "Project Founder"
+                },
+                {
+                    "name": "Twig Team",
+                    "homepage": "http://twig.sensiolabs.org/contributors",
+                    "role": "Contributors"
+                }
+            ],
+            "description": "Twig, the flexible, fast, and secure template language for PHP",
+            "homepage": "http://twig.sensiolabs.org",
+            "keywords": [
+                "templating"
+            ],
+            "time": "2015-01-25 17:32:08"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

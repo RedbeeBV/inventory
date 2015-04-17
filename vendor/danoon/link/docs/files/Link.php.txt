@@ -1,0 +1,8 @@
+<?php
+
+class_alias('\Link\Container', '\Link');
+
+set_error_handler('\Link\ExceptionHandler::errorHandler');
+
+set_exception_handler('\Link\ExceptionHandler::exceptionHandler');
+

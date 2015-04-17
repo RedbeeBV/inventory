@@ -1,0 +1,72 @@
+<?php
+
+namespace Link;
+
+/**
+ * Class Container
+ * @package Link
+ */
+class Container
+{
+
+	/**
+	 * @var \ArrayObject
+	 */
+	private $_values;
+
+	/**
+	 * @var \ArrayObject
+	 */
+	private $_closures;
+
+	/**
+	 *
+	 */
+	public function __construct()
+	{
+		$this->_closures = new \ArrayObject();
+		$this->_values = new \ArrayObject();
+	}
+
+	/**
+	 * @param $key
+	 * @param $arguments
+	 * @return mixed
+	 */
+	public function __call($key, $arguments)
+	{
+		if (!array_key_exists(0, $arguments)) {
+			$closure = $this->_closures->offsetGet($key);
+			return $closure($this);
+		}
+		if (!is_callable($arguments[0])) {
+			throw new \InvalidArgumentException('Service definition is not a Closure or invokable object.');
+		}
+		$this->_closures->offsetSet($key, $arguments[0]);
+	}
+
+	/**
+	 * @param $key
+	 * @param $closure
+	 * @return $this
+	 */
+	public function __set($key, $closure)
+	{
+		if (is_callable($closure)) {
+			throw new \InvalidArgumentException('Property definition can not be a Closure or invokable object.');
+		}
+		$this->_values->offsetSet($key, $closure);
+		return $this;
+	}
+
+	/**
+	 * @param $key
+	 * @return mixed
+	 */
+	public function __get($key)
+	{
+		$value = $this->_values->offsetGet($key);
+		return $value;
+	}
+}
+
