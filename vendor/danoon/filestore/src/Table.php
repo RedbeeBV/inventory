@@ -11,7 +11,7 @@ Class Table {
     }
 
     public function set($entry, $data) {
-        return file_put_contents($this->_dir . '/' . $entry, json_encode($data));
+        return file_put_contents($this->_dir . '/' . $entry, json_encode($data, JSON_PRETTY_PRINT));
     }
 
     public function get($entry) {
